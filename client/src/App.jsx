@@ -33,7 +33,9 @@ export default function App() {
  const startQuiz = () => {
   if (loading) return;
   setLoading(true);
-  fetch(`http://localhost:5000/api/questions?amount=15&difficulty=${difficulty}&category=${category}`)
+  const BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
+
+  fetch(`${BASE_URL}/api/questions?amount=15&difficulty=${difficulty}&category=${category}`)
     .then(res => res.json())
     .then(data => {
       if (data.results && data.results.length > 0) {
@@ -57,6 +59,7 @@ export default function App() {
     })
     .finally(() => setLoading(false));
 };
+
   const handleAnswer = (ans) => {
     setAnswers(prev => ({
       ...prev,
