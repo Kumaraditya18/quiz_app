@@ -1,118 +1,114 @@
 # 🧠 Quiz App
 
-A simple and interactive **Quiz Application** built with **React (Vite)**, **TailwindCSS**, and **Framer Motion** for smooth animations.  
-This project allows users to test their knowledge with multiple-choice questions and get instant score results.
-
----
+An advanced **full-stack quiz application** built with **React, Vite, TailwindCSS, Express, and Node.js**, allowing users to take quizzes across multiple categories and difficulty levels with real-time scoring, progress tracking, and review options.
 
 ## 🚀 Features
 
-- 🎯 **Multiple-choice questions** with instant feedback  
-- 📊 **Score tracking** at the end of the quiz  
-- ⚡ **Fast performance** powered by **Vite**  
-- 🎨 **Responsive UI** styled with **TailwindCSS**  
-- 🌀 Smooth animations using **Framer Motion**  
-- 📱 Mobile-friendly design  
+* 🎯 **Category & Difficulty Selection** – Customize your quiz experience
+* ⏳ **Real-time Timer** – Challenge yourself under time limits
+* ✅ **Answer Review System** – Mark questions for later and revisit before submission
+* 📊 **Score Summary** – View detailed results with correct and incorrect answers
+* ⚡ **Fast & Responsive UI** – Powered by React, Vite, and TailwindCSS
+* 🔗 **RESTful API Backend** – Express-based server for fetching quiz questions dynamically
+* 🌐 **Deployed on Vercel (Frontend)** and **Render (Backend)**
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React (Vite)  
-- **Styling:** TailwindCSS  
-- **Animations:** Framer Motion  
-- **Deployment:** Vercel  
+### **Frontend**
+
+* React (Vite)
+* TailwindCSS
+* Framer Motion (Animations)
+
+### **Backend**
+
+* Node.js
+* Express.js
+* REST API for quiz data
+
+### **Deployment**
+
+* **Frontend:** Vercel
+* **Backend:** Render
 
 ---
 
-## 📂 Project Structure
+## ⚙️ Installation & Setup
 
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Kumaraditya18/quiz_app.git
+cd quiz_app
 ```
 
-quiz-app/
-│── client/
-│   ├── public/           # Static files
-│   ├── src/
-│   │   ├── components/   # Reusable UI components
-│   │   ├── pages/        # App pages
-│   │   ├── data/         # Quiz questions data
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── package.json
-│   └── tailwind.config.js
-└── README.md
+### 2️⃣ Install Dependencies
 
-````
-
----
-
-## ⚙️ Installation
-
-1. **Clone the repository**
+* **Client:**
 
 ```bash
-git clone https://github.com/your-username/quiz-app.git
-cd quiz-app/client
-````
-
-2. **Install dependencies**
-
-```bash
+cd client
 npm install
 ```
 
-3. **Run the development server**
+* **Server:**
 
 ```bash
+cd ../server
+npm install
+```
+
+### 3️⃣ Environment Variables
+
+Create a `.env` file in the `client` folder and add:
+
+```
+REACT_APP_API_BASE_URL=https://quiz-app-26dn.onrender.com
+```
+
+### 4️⃣ Run the Application
+
+* **Start Backend:**
+
+```bash
+cd server
+npm start
+```
+
+* **Start Frontend:**
+
+```bash
+cd ../client
 npm run dev
 ```
 
-4. **Build for production**
-
-```bash
-npm run build
-```
-
-5. **Preview production build**
-
-```bash
-npm run preview
-```
+The app will be available at **[http://localhost:5173](http://localhost:5173)**.
 
 ---
 
-## 🌐 Deployment (Vercel)
+## 📦 Deployment
 
-1. Install Vercel CLI globally:
+### **Frontend (Vercel)**
 
-```bash
-npm install -g vercel
-```
+* Root Directory: `client`
+* Build Command: `npm run build`
+* Output Directory: `dist`
 
-2. Deploy:
+### **Backend (Render)**
 
-```bash
-vercel --prod
-```
+* Deploy server folder as a **Node.js app** with `npm start`.
 
 ---
-
-
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
-Feel free to open a pull request.
+Contributions are welcome! Feel free to fork this repo, create a branch, and submit a PR.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
-You are free to use and modify it for personal or commercial purposes.
+This project is licensed under the **MIT License** – you’re free to use and modify it.
 
-```
 
----
-
-Would you like me to make a **second version of this README with badges and a "Live Demo" button** (perfect for GitHub)?
-```
