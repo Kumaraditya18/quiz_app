@@ -1,12 +1,37 @@
-# React + Vite
+# 🎯 Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive **React + Vite** quiz application with category selection, difficulty levels, a timer, navigation panel, and score review. Built with **TailwindCSS**, **Framer Motion**, and a custom backend API.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Select **category** and **difficulty** before starting the quiz
+* **Timer & Progress bar** for better tracking
+* **Mark questions for review** and revisit later
+* **Animated transitions** using Framer Motion
+* **Responsive UI** with TailwindCSS
+* **Detailed results** with correct answers and total score
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React (Vite), TailwindCSS, Framer Motion
+* **Backend:** Node.js + Express (API hosted on Render)
+* **Deployment:** Vercel
+
+## ▶️ Getting Started
+
+```bash
+git clone https://github.com/Kumaraditya18/quiz_app.git
+cd quiz_app/client
+npm install
+npm run dev
+```
+
+App runs at **[http://localhost:5173](http://localhost:5173)**
+
+## 🌐 Deployment
+
+* Root Directory: `client`
+* Build Command: `npm run build`
+* Output Directory: `dist`
+* Env: `REACT_APP_API_BASE_URL=https://quiz-app-26dn.onrender.com`
+
